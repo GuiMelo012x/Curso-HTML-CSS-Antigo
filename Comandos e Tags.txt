@@ -95,3 +95,63 @@ a:active{
 	Quando pressiona o botão do mouse em cima do link.
 
 }
+
+Imagens:
+Em HTML 
+	<img src="..." alt ="...">
+		src = a origem da imagem, que seria um diretório do computador.
+		alt = texto alternativo caso a imagem não carregue.
+		melhor incluir um alt vazio do que não incluir nenhum alt.
+
+Em CSS 
+	background-image: url(...); 
+		não pode haver espaço entre o "url()" 
+
+Tipos de Imagem 
+	Bitmap - formada por pixels, usada quando a foto tem muitas cores.
+	Vetor - formada por calculos matematicos, mais leve que a Bitmap. Não perde resolução.
+
+	.jpg/.jpeg - imagem em bitmap. Não há transparência, pois os pixels devem ser coloridos
+	.png - tamanho menor, serve pra fotografias. Tem transparência
+	.gif - imagem leve, melhor utilizado quando há poucas cores. Não consegue ficar 100% transparênte.
+	.svg - formato vetorial, ideal para logotipos com poucas cores, ou arquivos de texto. O usuário poderá dar zoom, não precisa se preocupar com resolução.
+	.webp e .avif - melhores que jpg e png, são de Bitmap e conseguem comprimir muito mais os arquivos. Porém não são muito suportados pelos browsers atuais, principalmente o .avif. 
+ 
+
+Float
+	Faz com que a imagem fique à esquerda, centro ou direita, e faz com que o texto se alinhe de acordo com a imagem.
+	float:left;
+	float:right;
+
+Line-height
+	Altera a altura da linha entre uma e outra.
+	line-height: 1.5;
+
+Background-repeat
+	background-repeat: repeat; é o padrão.
+	background-repeat: repeat-x; repete apenas na horizontal.
+	background-repeat: repeat-y; repete apenas na vertical.
+
+Background-size
+	tamanho da foto de background
+	background-size: 350px 600px; altura e largura
+	background-size: 100%;
+	background-size: contain; ela sempre vai mostrar toda a imagem mesmo se ela se duplicar. Dá preferência ao conteúdo da imagem
+	background-size: cover; ela ocupa a área disponível, mesmo se esconder a imagem.
+
+
+Background-attachment
+	configura como a imagem se comporta ao scrollar pela página
+	background-attachment:scroll; é o padrão.
+	background-attachment:fixed; fixa, ela não scrolla e fica parada.
+
+Background-position
+	background-position: bottom; a imagem gruda na parte de baixo
+	background-position: right bottom;
+
+Diferença entre background e background-img
+	background - vc pode ter um atalho para outras propriedades, como mudar a cor, por exemplo.
+        background: url(imagens/tile-pattern.png) grey no-repeat fixed;
+	Se tiver outra background também embaixo, a de baixo prevalece.
+	Mesma coisa com o margin.
+
