@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style> /* CSS */
+       body{
+        font-family: sans-serif;
+        color: red;
+       }
+       a{
+        display:inline-block;
+        padding:3px;
+       }
+       a:link{ /* Somente os links que vc nunca visitou ficarão vermelhos*/
+        color:red;
+       }
+
+       a:visited{ /* Somente os links vc já  visitou ficarão vermelhos*/
+        color: green;
+       }
+
+       a:hover{ /* Quando o mouse fica em cima, fica cinza ao redor do link */
+        background-color: #ccc;
+       }
+
+       a:active{ /* Quando o mouse clica, fica roxo ao redor do link */
+        background-color: purple;
+       }
+       
+    </style>
+</head>
+<body>
+    <h1> Links </h1>
+    <h2> Titulo 2 </h2>
+    <a href="display.html"> Display em Roxo</a>  
+    |
+    <a href="boxModel.html"> Box Model em Roxo</a>
+    |
+    <a href="seila.html"> Página Inexistente em Azul</a>
+    <p>
+        Veja mais exemplos aqui: <a href="box_sizing.html"> Box Sizing</a>
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Caxa</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        p{
+            background-color: grey;
+            margin-top: 0;
+        }
+
+        h1{
+            background-color: red;
+            padding: 10px;
+            border-bottom: 3px solid blue;
+        }
+        
+        h2{
+            background-color: green;
+            margin-top: 56px;
+            font-size: 50px;
+        }
+
+        p{
+            padding-top: 50px;
+            padding-right: 40px;
+            padding-bottom: 30px;
+            padding-left: 20px;
+            /* ou p{ padding: 50px 40px 30px 20px;*/
+                /*  se omitir o left, ele pega do right. 
+                    se omitir o bottom, ele pega do top
+                    se omitir todos, ele pega do unico declarado*/ 
+
+            margin-top: 50px;
+            margin-right: 40px;
+            margin-bottom: 30px;
+            margin-left: 20px;
+            /*ou p{margin: 50px 40px 30px 20px*/
+        }
+        .destaque{
+            color: white;
+        }
+        .size{
+            width: 50%;
+            height: 100px;
+        }
+
+        .padding{
+            padding: 26px;
+        }
+
+        .margin{
+            margin: 50px 0  20px 100px;
+        }
+
+        .borda{
+            border: 5px solid red;
+            /* border-top: 10px solid red;
+               border-right: 10px solid red;
+               border-bottom: 10px solid red;
+               border-left: 10px solid red; 
+               -- Mesma coisa que a primeira linha . ( E tem q ser no sentido horário)*/
+        }
+
+        .outline{
+            outline: 5px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Box Model </h1>
+
+    <h2> Width e Height </h2>
+
+    <p> Lorem ipsum dolor sit amet.</p>
+    <p class="destaque size margin padding" > Lorem ipsum dolor sit amet.</p>
+    <p> Lorem ipsum dolor sit amet.</p>
+
+    <h2 class = "destaque size borda padding"> Bordas </h2>
+    <p> Lorem ipsum dolor sit amet.</p>
+    <p> Lorem ipsum dolor sit amet.</p>
+    <p> Lorem ipsum dolor sit amet.</p>
+    <p> Lorem ipsum dolor sit amet.</p>
+    <p> Lorem ipsum dolor sit amet.</p>
+
+
+    <h2 class = "destaque outline"> Outline </h2>
+    <p> Lorem ipsum dolor sit amet.</p>
+    <p> Lorem ipsum dolor sit amet.</p>
+    <p> Lorem ipsum dolor sit amet.</p>
+    <p> Lorem ipsum dolor sit amet.</p>
+    <p> Lorem ipsum dolor sit amet.</p>
+
+</body>
+</html>
