@@ -1,0 +1,97 @@
+<h1> Utilizado para fazer títulos </h1>
+
+<h2> Para fazer subtítulos </h2>
+<h3> Para fazer sub subtítulos </h3>
+<h4> Subtítulo do h3 </h4>
+<h5> Subtítulo do h4 </0h5>
+<h6> Subtítulo do h5 </h6>
+
+
+<p> Para fazer parágrafos </p>
+<i> itálico </i>
+<b> negrito </b>
+<mark> marcado </mark>
+<ins> sublinhado </ins>
+<del> riscado </del>
+	<p> Este parágrafo tem palavras em <i> itálico </i> e <b> negrito </b> </p>
+	<p> Este parágrafo tem palavras <mark> marcadas </mark>, <ins> sublinhadas </ins> e <del> riscadas </del> </p>
+
+<strong> é usado para palavras importantes, e <b> menos importantes, strong é pra DESTACAR mesmo
+o mesmo serve para <em> e <i>. 
+
+<strong> e <em> -> Forte e importante.
+<b> e <i> -> Fraco e menos importante.
+
+LISTA NÃO ORDENADA (pontos)
+<ul> 
+	<li> ... </li>
+	<li> ... </li>
+</ul>
+
+LISTA ORDENADA (1,2,3)
+<ol>
+	<li> ... </li>
+	<li>...</li>
+</ol>
+
+LINK 
+<p> Clique no link para ir para o youtube: <a href="https://www.youtube.com/watch?v=QdBZY2fkU-0 " target="_blank"> Isto é um hyperlink </a> </p> 
+target_blank faz com que o vídeo abra em outra aba
+
+<tag atributo = "valor"> hyperlink aqui </tag>
+
+<a href = "pagina2.html"> - abre outra pagina num arquivo html salvo no mesmo local que o atual.
+
+QUEBRAS DE LINHA
+
+<br> Quebra de linha normal
+<hr> Quebra de linha com uma marcação de linha  
+
+<!-- Comentando Códigos !-->
+
+<!doctype html> -- deve estar na linha 1, no topo do código e sem espaços.
+<meta charset = "utf-8"> -- indica para o browser os caracteres a serem utilizados.
+<html lang ="pt-br">
+	<head> 
+		<title> título da página </title>
+		<meta tags> - palavras-chave
+		<link para arquivos externos> - arquivo de javascript, css. 
+	</head>
+	<body>
+		<h1> título da página <h1>
+		<p> texto </p>
+		<ul> 
+			<li> item de lista </li>
+		</ul>
+		<!-- conteúdo da página --!>
+	</body>
+</html>
+
+<a> - Serve para colocar um conteúdo clicável, um hyperlink.
+	href - o link.
+	title - informa ao browser o título da URL.
+<link> - Serve para ser o vínculo de um arquivo com outro arquivo.
+	href - faz referência para o arquivo externo.
+	rel - ele afirma qual o tipo de arquivo que irá fazer a referência.
+<img>  - Serve para incluir imagem na página.
+	src - a fonte da imagem.
+	alt - texto alternativo caso a imagem não carregue.
+<script> - Serve para incluir um arquivo de Javascript.
+	src - source.
+
+
+Pseudo-classes:
+a:link{
+	Estado normal de um link, sem mouse em cima, sem ter visitado antes, sem estar sendo clicado.
+}
+a:visited{
+	Uma página já visitada anteriormente, pode ter uma formatação diferente.
+}
+a:hover {
+	Quando passa o mouse na area clicável.
+}
+
+a:active{
+	Quando pressiona o botão do mouse em cima do link.
+
+}
