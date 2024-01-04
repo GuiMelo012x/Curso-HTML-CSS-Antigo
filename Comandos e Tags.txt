@@ -155,3 +155,65 @@ Diferença entre background e background-img
 	Se tiver outra background também embaixo, a de baixo prevalece.
 	Mesma coisa com o margin.
 
+
+CSS:
+border-radius: 6px; /* Arredondar, curvar a borda*/
+letter-spacing: 1px; /* Espaçamento entre as letras */
+background-color: rgba(0, 0, 0, .3); /* o último mexe na transparência, de 0 a 1*/
+display:inline-block; /* Cria a caixa */
+min-width: 600px; /* Minima quantidade de width */ 
+max-width: 850px; /* Máxima quantidade de width */ 
+width: fit-content; /* Encaixa todo o conteúdo no tamanho da caixa, em apenas uma linha*/
+width: max-content; /* Pega o tamanho da menor palavra e transforma ela na maior largura possível*/
+width: min-content; /* Pega o tamanho da maior palavra e transforma ela na menor largura  possível*/
+  
+HTML:
+p{Lorem ipsum dolor!}*10 -> Pega o mesmo texto e cola 10x
+div#div1 -> acelera o processo e cria um <div id="div1"></div>
+
+
+
+
+overflow -> serve para tratar o conteúdo que excede o elemento, que sai da caixa e vai embora.
+	overflow: hidden; /* Todo o conteúdo que excede fica escondido */
+	overflow: scroll; /* Esconde o conteúdo, mas habilita um scroll que permite ler o texto que excede, funciona tanto na horizontal quanto na vertical */
+	overflow: auto; /* Faz a mesma coisa do scroll, mas só põe a barra de rolagem onde é necessário, e se for necessário.*/
+	overflow-x e overflow-y: auto,scroll,hidden; /* Para mexer individualmente com os scrolls horizontais e verticais. */
+	
+	
+Position -> serve para posicionar os elementos na tela
+	static: padrão
+	relative: se desloca de acordo com sua posição original
+	absolute: sai do fluxo natural do documento e se alinha de acordo com o container mais proximo  q nao seja static.
+	fixed: sempre se relaciona com a janela do browser, e sai do fluxo natural do documento.
+	sticky:  híbrido do relative e do fixed.
+		funcionam com  top, bottom, left e right.
+	
+	z-index-> para controlar quem fica na frente ou atrás.
+	
+Flexbox
+	display:flex
+	
+	flex-wrap: wrap; -> Se nao tiver espaço na direita, ele quebra a linha.
+	flex-wrap: nowrap; -> nao quebra a linha.
+	
+	flex-direction: column; -> transforma em coluna.
+	flex-direction: column-reverse; -> coluna em reverse.
+	flex-direction: row; -> em linha.
+	flex-direction: row-reverse; -> linha em reverse.
+	
+	flex-flow: row wrap; -> serve para juntar os dois comandos acima.
+	
+	justify-content: flex-end; -> ele põe o conteudo no final.
+	justify-content: center; -> ele põe o conteudo no meio.
+	justify-content: space-around; -> ele pega o espaço que sobre e divide entre os flex items
+	justify-content: space-between; -> ele pega o espaço que sobra e divide no meio. Ele nao deixa espaço algum no primeiro nem no último.
+	justify-content: space-evenly; -> deixa sempre o mesmo espaço, de forma mais exata. 
+	
+	align-items: center,flex-end,flex-start...;
+	align-items: baseline; -> alinha todos os elementos junto com o maior elemento da div.
+	
+	align-content: center,flex-end,flex-start...;
+	
+	justify-content geralmente alinha os itens na horizontal, e o align-content geralmente alinha os itens na vertical, mas nem sempre isso é verdade.
+	
