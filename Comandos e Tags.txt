@@ -166,6 +166,12 @@ max-width: 850px; /* Máxima quantidade de width */
 width: fit-content; /* Encaixa todo o conteúdo no tamanho da caixa, em apenas uma linha*/
 width: max-content; /* Pega o tamanho da menor palavra e transforma ela na maior largura possível*/
 width: min-content; /* Pega o tamanho da maior palavra e transforma ela na menor largura  possível*/
+text-transform: uppercase; -> deixa o texto em maiusculo.
+<span> -> usa quando você deseja aplicar estilos ou scripts a uma parte específica de um texto, sem afetar o conteúdo ou a estrutura do documento.  
+pointer-events:none --> se vc quer ou não que o elemento seja clicável. Vai ignorar o hover e o fato de que o elemento em si é um link. 
+cursor:default; --> altera o cursor. Neste caso, ele irá continuar sendo clicável mas não vai mudar para o "dedo pra cima" quando põe em cima de um link.
+flex:1 --> aloca todo o espaço disponível para esse item dentro do contêiner flexível.
+
   
 HTML:
 p{Lorem ipsum dolor!}*10 -> Pega o mesmo texto e cola 10x
@@ -216,4 +222,28 @@ Flexbox
 	align-content: center,flex-end,flex-start...;
 	
 	justify-content geralmente alinha os itens na horizontal, e o align-content geralmente alinha os itens na vertical, mas nem sempre isso é verdade.
+	
+	
+	
+	
+Especificidade
+	.header__nav a{ --> 1
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 6px;
+	}
+
+	.header__nav--active{ --> 2
+		background-color: #cbe300;
+		color: #0c1014;
+	}
+	
+	  Na especificidade, ganha quem é mais específico. Por exemplo, quem ganha nesta, é o item 1, pois ele é mais específico que o 2. O 1 possui apelido e elemento, 
+	  enquanto o 2 possui apenas apelido.
+	  Para contornar este problema, vc pode fazer com que os 2 elementos tenham uma classe e uma tag, assim, ganha quem estiver por último no documento.
+	  ou então especifica transformando o .header__nav--active em ----> a.header__nav active{
+	
+	.header__nav a --> com o espaço, seleciona a tag "a" que está contido no elemento que tem a classe header__nav
+	a.header__nav--active --> sem o espaço, seleciona a tag  "a" que contém a classe header__nav--active
 	
