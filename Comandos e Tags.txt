@@ -247,3 +247,70 @@ Especificidade
 	.header__nav a --> com o espaço, seleciona a tag "a" que está contido no elemento que tem a classe header__nav
 	a.header__nav--active --> sem o espaço, seleciona a tag  "a" que contém a classe header__nav--active
 	
+Avançando em CSS
+
+	mudar o font size no html para 62.5%, assim,  1 em = 10px
+		html{
+			font-size: 62.5%
+		}
+	1 em --> 16px
+	a unidade de elemento EM é sempre relativa em relação ao elemento pai.
+			p{
+            font-size: 2em; /*1.6 em = 16px*/
+			}
+				Neste caso, como p = 2em, cada 1 EM do b{ equivale a 20
+			b{
+				font-size: 1em;
+				color: red;
+			}
+	rem --> pega o valor do root, ou seja, do html. 
+		neste caso, é 10px (62,5%),
+	
+	font-size: 100% --> 1em
+	As porcentagens sempre estarão relacionadas à largura do elemento pai
+	Quando aumenta o font-size, o padding aumenta de acordo.
+	Os paddings estão ligados com o tamanho da fonte.
+	
+	Viewport --> é a tela visível do aparelho em que o site está aberto
+		vh --> viewport height - se vc pôr height:75vh, ele ocupará 75% da altura da tela.
+		vw --> viewport width - se vc pôr width:75vw, ele ocupará 75% da largura da tela.
+	
+	Unidade ch --> define a quantidade de caracteres que vai ter por linha ou coluna.
+		width:20ch ->
+			Lorem ipsum dolor, sit
+			magni nisi harum. Quos 
+			
+	Função calc --> soma unidade de medidas diferentes. Deve ter espaço antes e depois dos símbolos de + e -.
+		min-height: calc(500px + 70px);
+		min-height: calc(100vh - 15rem - 2rem);
+	
+	Para criar variáveis, coloca-se 2 "--" seguido do nome, dois pontos e um argumento:
+		É boa prática de programação colocar no ::root ao invés do }html pois fica mais organizado.
+			::root{
+			--header-height:15rem;
+			--main-color: royalblue;
+			}
+			
+			mais abaixo no código:
+			header{
+				height: var(--header-height);
+				background-color: var(--main-color);
+			}
+			main{
+			min-height: calc(100vh - var(--header-height) - 2rem);
+			margin-top: var(--header-height);
+			background-color: var(--main-color);
+			}
+		Sempre que precisar usar algo que se relaciona com a altura do header, é só chamar a variável.
+		
+		Também é possível mudar a variável de acordo com o escopo que você está
+			p1{
+				--main-color: yellow;
+				color:var(--main-color); --> agora a --main-color não é mais azul, é amarelo.
+			}
+			p2{
+				color:var(--main-color); --> continua azul
+			}
+			
+
+
