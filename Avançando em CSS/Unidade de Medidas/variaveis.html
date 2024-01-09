@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Variáveis</title>
+    <style> 
+        :root{
+            --header-height:10rem;
+            --main-color: royalblue;
+        }
+        
+        html{
+            font-size: 62.5%;
+        }
+
+        header{
+            width: 100%;
+            background-color: rgba(255, 0, 0, 0.3);
+            height: var(--header-height);
+            font-size: 2rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        main{
+            min-height: calc(100vh - var(--header-height) - 2rem);
+            background-color: #ccc;
+            font-size:2rem;
+            margin-top: var(--header-height);
+        }
+
+        footer{
+            height: 10rem;
+            font-size: 2rem;
+            background-color: royalblue;
+        }
+        .p1{
+            margin: 100px;
+            --main-color: yellow;
+            color:var(--main-color);
+        }
+
+        .p2{
+            color:var(--main-color);
+        }
+			
+    
+    </style>
+</head>
+<body>
+    <header> header </header>
+    <main>main
+        <p class = 'p1'> Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Sunt laborum amet sapiente aperiam eius fugit? </p>
+        
+        <p class = 'p2'> Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Sunt laborum amet sapiente aperiam eius fugit? </p>
+    </main>
+    <footer>footer</footer>
+</body>
+</html>
