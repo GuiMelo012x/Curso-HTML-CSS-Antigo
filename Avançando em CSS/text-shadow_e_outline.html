@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Shadow e Outline</title>
+
+    <style>
+        h1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 3em;
+            color:dimgray;
+
+            text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.8);
+        /*  text-shadow: deslocamento horizontal, deslocamento vertical, esfumaçamento, cor  */
+        }
+        div{
+            width: 200px;
+            height: 100px;
+            background-color: yellow;
+
+            outline: 4px solid red;
+            outline-style: dashed;
+            outline-offset: 20px;
+            box-sizing: border-box;
+        }
+
+        div:hover{
+            outline: 10px solid red;
+            /* Diferença entre border e outline:
+                No border, a borda vai pra dentro, no outline ela vai pra fora.
+                No outline, o texto não se mexe nem muda de posição. */
+        }
+   
+    </style>
+</head>
+<body>
+    <h1>Text Shadow</h1>
+
+    <div> Outline </div>
+
+
+</body>
+</html>
