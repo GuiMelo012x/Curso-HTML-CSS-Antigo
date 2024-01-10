@@ -314,3 +314,22 @@ Avançando em CSS
 			
 
 
+	  box-shadow: 10px 10px 0 black;
+		box-shadow: deslocamento horizontal, deslocamento vertical, esfumaçamento, cor 
+		aceita valores negativos para esquerda, positivos para direita.
+	    aceita mais de uma sombra, só adicionar depois da vírgula 
+	
+	text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.8);
+        text-shadow: deslocamento horizontal, deslocamento vertical, esfumaçamento, cor  
+		
+	outline: 10px solid red;
+		Diferença entre border e outline:
+			No border, a borda vai pra dentro, no outline ela vai pra fora. 
+			No outline, o texto não se mexe nem muda de posição.
+		
+	Font-Face:
+		deve-se especificar o formato da fonte.
+			url(fonts/nadia/nadia-serif.ttf) format("truetype") -> Safari, Android, iOS.
+			url(fonts/nadia/nadia-serif.woff) format("woff") -> Browsers modernos.
+			url(fonts/nadia/nadia-serif.woff2) format("woff2") -> Browsers super modernos.
+			url(fonts/nadia/nadia-serif.svg) format("svg") -> Legacy iOS.
