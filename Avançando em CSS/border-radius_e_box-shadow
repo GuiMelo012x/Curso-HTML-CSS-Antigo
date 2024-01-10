@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Border Radius e Box Shadow</title>
+
+    <style>
+        div{
+            background-color: dimgray;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            
+
+            border-radius: 50px 20px 0 80px / 100px 50px 0 20px;
+        /*                  horizontal / vertical */
+
+            box-shadow: 11px 0 10px 1px black, -115px 0px 1px red, 115px 0 1px 5px green;
+        /*  box-shadow: 10px 10px 0 black, 10px 20px 10px red;
+            box-shadow: deslocamento horizontal, deslocamento vertical, esfumaçamento, cor 
+            aceita valores negativos para esquerda, positivos para direita.
+            aceita mais de uma sombra, só adicionar depois da vírgula                                  */
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Border Radius e Box Shadow  </h1>
+
+
+    <div></div>
+</body>
+</html>
