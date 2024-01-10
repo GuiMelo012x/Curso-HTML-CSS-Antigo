@@ -333,3 +333,37 @@ Avançando em CSS
 			url(fonts/nadia/nadia-serif.woff) format("woff") -> Browsers modernos.
 			url(fonts/nadia/nadia-serif.woff2) format("woff2") -> Browsers super modernos.
 			url(fonts/nadia/nadia-serif.svg) format("svg") -> Legacy iOS.
+	Transition:
+		transition-property: all / width; --> aonde vai acontecer a transição
+			all --> anima tudo
+		transition-duration: 500ms; --> o tempo em segundos ou ms da transição
+		transition-timing-function: linear/ease/ease-in/ease-out --> se vai ter aceleração ou não
+			linear  --> vai na mesma velocidade, do inicio ao fim.
+			ease --> acelera, e depois desacelera no final.
+			ease-in --> acelera a animação no início.
+			ease-out --> desacelera a animação no final.
+			ease-in-out --> acelera no começo, desacelera no final.
+			cubic-bezier() --> 
+				https://cubic-bezier.com 
+				usar o site para testar as animações
+			transition-delay: 1s; --> o tempo que leva após o mouse estar em cima e a animação acontecer.
+			
+			transition-property: width,height,background-color; --> também é possível declarar assim.
+            transition-duration: 1s, 5s; --> dessa forma, os dois foram declarados com seu próprio tempo de animação.
+				width 1s, height 5s e o background-color vai herdar do primeiro, ou seja, 1s.
+			transition-timing-function: cubic-bezier(cubic-bezier(0,1.07,1,.08));
+				vai ficar igual para todos.
+			transition-delay:0.1s,1s;
+				mesma coisa do duration, o  bg color vai herdar do 1, ja que nao foi declarado.
+			
+			O 0 sempre vai precisar de uma medida. 
+				transition-delay:0; --> errado
+				transition-delay:0s; --> correto
+				
+			transition: property(all) duration(0s) function(ease) delay(0s); --> os itens entre parênteses são os padrões, isto é,
+			se ocultados, vão ser considerados. É prioritário e passa por cima dos outros declarados individualmente.
+			
+		
+            transition: width 1s ease, height, margin 1s ease,background-color 0.5s ease-in-out 0s;
+				pode alterar mais de um elemento, separando por vírgulas.
+			
