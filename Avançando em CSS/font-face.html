@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Font-Face</title>
+
+    <style>
+        html{
+            font-size: 62.5%;
+            font-family: rdr2;
+        }
+            
+        @font-face{
+            font-family: rdr2;
+            src: url(fonts/chinese\ rocks\ rg.otf);
+            /*
+                url(fonts/nadia/nadia-serif.ttf) format("truetype") -> Safari, Android, iOS.
+                url(fonts/nadia/nadia-serif.woff) format("woff") -> Browsers modernos.
+                url(fonts/nadia/nadia-serif.woff2) format("woff2") -> Browsers super modernos.
+                url(fonts/nadia/nadia-serif.svg) format("svg") -> Legacy iOS.
+                
+                é necessário formatar o OTF e transformar em woff, wofff2,svg e ttf.
+            */
+        }
+
+        h1{
+            font-size: 7em;
+            color: white;
+            text-shadow: 6px 5px rgba(0, 0, 0, 0.9);
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 40px;
+        }
+        h2{
+            font-size: 5em;
+        }
+       
+        span{
+            color: red;
+            text-shadow: 10px 5px 1px black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Red Dead Redemption <span>II</span> </h1>
+    <h2> Font-Face </h2>
+
+
+</body>
+</html>
