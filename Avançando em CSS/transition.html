@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition</title>
+    <style>
+
+        div{
+            background-color: royalblue;
+            width: 200px;
+            height: 150px;
+            margin: 100px auto;
+            transition-property: width,height,background-color;
+            transition-duration: 1s, 5s;
+            transition-timing-function: cubic-bezier(cubic-bezier(0,1.07,1,.08));
+                /*	https://cubic-bezier.com  */
+            transition-delay: 0.1s;
+
+            transition:
+        }
+
+        div:hover{
+            width: 400px;
+            height: 300px;
+            background-color: yellow;
+        }
+
+        div.transition{
+            background-color: orange;
+            width: 200px;
+            height: 150px;
+            margin: 100px auto;
+
+            transition: width 1s ease, height, margin 1s ease,background-color 0.5s ease-in-out 0s;
+        }
+
+        div.transition:hover{
+            width: 400px;
+            height: 400px;
+            margin: 210px auto;
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+
+    <div class="transition">
+
+    </div>
+    
+</body>
+</html>
